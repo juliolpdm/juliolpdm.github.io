@@ -1,7 +1,7 @@
 
         @font-face {
             font-family: 'Daily';
-            src: url("DSFetteGotisch.ttf");
+            src: url("src/fuentes/ds-fette-gotisch/DSFetteGotisch.ttf") format('truetype');
         }
         * {
             margin: 0;

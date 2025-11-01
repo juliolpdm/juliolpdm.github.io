@@ -1,8 +1,8 @@
 ---METADATA---
-TITLE: Watchmen
-DATE: 1 de noviembre de 2024
+TITLE: El amor y la maxima de las relaciones humanas
+DATE: 1 de Noviembre de 2025
 IMAGE: https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800&h=400&fit=crop
-EXCERPT: El facismo estadounidense post ww2 
+EXCERPT: Analisis de las conexiones humanas y lo especial del amor
 ---CONTENT---
 
 <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800&h=500&fit=crop" class="modal-article-image">
