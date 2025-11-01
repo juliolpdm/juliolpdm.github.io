@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Fortaleza - Archivo Personal</title>
+    <title>Daily planet</title>
     <style>
 
-            @font-face {
+        @font-face {
             font-family: 'Daily';
-            src: url("\src\fuentes\ds-fette-gotisch\DSFetteGotisch.ttf");
+            src: url("DSFetteGotisch.ttf");
         }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        a{
+            color: #333;
+        }
         body {
-            font-family: 'Daily';
+            font-family: 'Georgia';
             background: #f5f5f0;
             color: #1a1a1a;
             line-height: 1.6;
@@ -32,14 +34,16 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
+        .logo-image {
+            margin-bottom: -40px;
+        }
         .masthead {
-            font-family: 'Times New Roman', serif;
+            font-family:'Daily';
             font-size: 4em;
-            font-weight: bold;
+
             letter-spacing: 2px;
             color: #000;
-            text-transform: uppercase;
+
             border-top: 2px solid #000;
             border-bottom: 2px solid #000;
             padding: 10px 0;
@@ -47,7 +51,7 @@
         }
 
         .tagline {
-            font-family: 'Daily';
+            font-family: 'Georgia', serif;
             font-style: italic;
             font-size: 1.1em;
             color: #666;
@@ -411,12 +415,13 @@
             }
         }
     </style>
+    
 </head>
 <body>
     <!-- Header tipo periódico -->
     <div class="newspaper-header">
          
-        <div class="masthead">◆ DAILY <img src="\src\img\header.jpg" height="60" width="62px"> PLANET ◆</div>
+        <div class="masthead">★ D a i l y  <img src="src\img\logo.png" height="120px" width="140px" class="logo-image"> P l a n e t ★</div>
         <div class="tagline">VOL, LXIII - NO.60,002 ------ METROPOLIS ---------- $67</div>
         <div class="header-date" id="current-date"></div>
     </div>
@@ -424,74 +429,91 @@
     <div class="container">
         <!-- PÁGINA DE INICIO -->
         <div id="inicio" class="page active">
-            <!-- Aquí puedes personalizar completamente el contenido -->
+            
             
             <div class="content-section">
-                <h2 class="section-heading">Literalmente yo hecho collage:</h2>
-                <img src="\src\img\home.jpg" 
+                <h2 class="section-heading">Juliolpdm's mind</h2>
+                <div class="columns-3">
+                    <p class="section-subheading">Que es esta pagina?</p>
+                    <p>Dada mi soledad actual he decidido que necesito un lugar para vaciar mi mente y poder expresarme libremente, puesto que no tengo las habilidades plasticas para un diario decorado con recortes y sum shit y se supone que tengo carrera tecnica de programacion, decidi hacer esta pagina lol, voy a poner analisis a distintos medios que vaya consumiendo y puesto que estoy seguro que nadie leera esta pagina, usarlo como diario y escribir pensamientos, ideas y proyectos que vaya teniendo y sentir que lo estoy comunicando lol</p>
+                    <p>-★★★-</p>
+                    <p class="section-subheading">Presentacion </p>
+                    <p>Holol, soy yo, como sabran soy fan de superman, en general fan de los comics y contenido capeshit(de superheroes), de transformers y star wars, en general me gusta mucho la fantasia y la ciencia ficcion, el arte como forma de expresion, como espectador especialmente de la pintura/dibujo, cine y literatura, pero me gusta escribir especialmente poemas o ciencia ficcion y fantasia, me gusta mucho la tecnologia y las ciencias aplicadas, seguramente pase los ultimos años de mi vida solo en un laboratorio creando robots que me hagan compañia lol</p>
+                    <p> Mi sueño es hacer el mundo un lugar mejor <img src="src/gifs/minecraft-villager.gif" width="30px" height="30px"> </p>
+                    <p> -★★★- </p>
+                    <p class="section-subheading">★CONTACTO:</p>
+                    <a href="instagram.com/Juliolpdm">★Instagram: @Juliolpdm</a>
+                    <p></p>
+                    <a href="wa.me/+523328028385">★Telefono (doxxeo free idgaf)</a>
+                    <p>no tengo mas redes sociales lol</p>
+                </div>
+                <h1 class="section-heading"> MY WAY</h1>
+                <img src="src\img\home.jpg" 
                      class="featured-image" alt="Portada">
                 <div class="columns-2">
+                    <h2 class="section-heading">Literalmente yo hecho collage:</h2>
                     <p>Este es mi refugio personal, mi Fortaleza de la Soledad donde archivo las historias, análisis y pensamientos que dan forma a mi comprensión del mundo. Como los cristales de Krypton que preservan el conocimiento de una civilización, aquí conservo las narrativas que me han transformado.</p>
                     
                     <p>En estas páginas encontrarás análisis profundos de libros, películas, cómics y series que han dejado huella en mi manera de pensar. También ensayos sobre narrativa, cultura y el poder transformador de las historias. Cada entrada es una exploración, una conversación conmigo mismo y con las obras que amo.</p>
                     
                     <p>La narrativa es el lenguaje fundamental de la experiencia humana. No vivimos en hechos aislados, sino en historias que les dan significado. Este archivo es mi intento de entender ese proceso, de capturar cómo las historias nos cambian y por qué algunas permanecen con nosotros para siempre.</p>
                 </div>
+                
             </div>
 
-            <div class="section-divider">◆ ◆ ◆</div>
+            <div class="section-divider"> ★ ★ ★ </div>
 
             <div class="content-section">
                 <h2 class="section-heading">Explora el Archivo</h2>
-                <p class="section-subheading">Selecciona una sección para comenzar tu exploración</p>
+                <p class="section-subheading">Secciones donde voy a compartir lo que piense </p>
                 
                 <!-- NAVEGACIÓN POR IMÁGENES - TOTALMENTE PERSONALIZABLE -->
                 <div class="nav-grid">
                     <div class="nav-card" onclick="showPage('libros')">
-                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=400&fit=crop" 
+                        <img src="src\img\libros.jpg" 
                              class="nav-card-image" alt="Libros">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">📚 Libros</div>
+                            <div class="nav-card-title"> Libros</div>
                         </div>
                     </div>
 
                     <div class="nav-card" onclick="showPage('peliculas')">
-                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=400&fit=crop" 
+                        <img src="src\img\peliculas.jpg" 
                              class="nav-card-image" alt="Películas">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">🎬 Películas</div>
+                            <div class="nav-card-title"> Películas</div>
                         </div>
                     </div>
 
                     <div class="nav-card" onclick="showPage('comics')">
-                        <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=600&h=400&fit=crop" 
+                        <img src="src\img\comics.jpg" 
                              class="nav-card-image" alt="Cómics">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">💥 Cómics</div>
+                            <div class="nav-card-title">Cómics</div>
                         </div>
                     </div>
 
                     <div class="nav-card" onclick="showPage('series')">
-                        <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&h=400&fit=crop" 
+                        <img src="src\img\series.jpg" 
                              class="nav-card-image" alt="Series">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">📺 Series</div>
+                            <div class="nav-card-title"> Series</div>
                         </div>
                     </div>
 
                     <div class="nav-card" onclick="showPage('ensayos')">
-                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=400&fit=crop" 
+                        <img src="src\img\ensayos.jpg" 
                              class="nav-card-image" alt="Ensayos">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">✍️ Ensayos</div>
+                            <div class="nav-card-title"> Ensayos</div>
                         </div>
                     </div>
 
                     <div class="nav-card" onclick="showPage('pensamientos')">
-                        <img src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600&h=400&fit=crop" 
+                        <img src="src/img/pensamientos.jpg" 
                              class="nav-card-image" alt="Pensamientos">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title">💭 Pensamientos</div>
+                            <div class="nav-card-title"> Pensamientos</div>
                         </div>
                     </div>
                 </div>
