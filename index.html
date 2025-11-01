@@ -79,11 +79,11 @@
                         </div>
                     </div>
 
-                    <div class="nav-card" onclick="showPage('series')">
-                        <img src="src\img\series.jpg" 
-                             class="nav-card-image" alt="Series">
+                    <div class="nav-card" onclick="showPage('proyectos')">
+                        <img src="src\img\proyectos.jpg" 
+                             class="nav-card-image" alt="proyectos">
                         <div class="nav-card-overlay">
-                            <div class="nav-card-title"> Series</div>
+                            <div class="nav-card-title"> proyectos</div>
                         </div>
                     </div>
 
@@ -151,14 +151,14 @@
             <div class="newspaper-grid" id="comics-content"></div>
         </div>
 
-        <!-- PÁGINA DE SERIES -->
-        <div id="series" class="page">
+        <!-- PÁGINA DE proyectos -->
+        <div id="proyectos" class="page">
             <a href="#" class="back-home" onclick="showPage('inicio'); return false;">← Volver al Inicio</a>
             
-            <h2 class="section-heading">Series de Televisión</h2>
+            <h2 class="section-heading">proyectos de Televisión</h2>
             <p class="section-subheading">Narrativas episódicas que construyen mundos</p>
 
-            <div class="newspaper-grid" id="series-content"></div>
+            <div class="newspaper-grid" id="proyectos-content"></div>
         </div>
 
         <!-- PÁGINA DE ENSAYOS -->
@@ -190,268 +190,6 @@
         </div>
     </div>
 
-    <script>
-        // ============================================
-        // CONTENIDO TOTALMENTE PERSONALIZABLE
-        // ============================================
-
-        const contentData = {
-            libros: [
-                {
-                    title: "1984 de George Orwell",
-                    date: "15 de enero, 2024",
-                    image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=600&h=400&fit=crop",
-                    excerpt: "Una obra maestra distópica que explora los peligros del totalitarismo. Orwell crea un mundo aterrador donde el pensamiento individual es un crimen y la historia se reescribe constantemente.",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Una obra maestra distópica de George Orwell que explora los peligros del totalitarismo. La historia de Winston Smith en Oceanía es una advertencia sobre el control gubernamental, la manipulación del lenguaje y la verdad. La figura de Gran Hermano representa la vigilancia extrema y la pérdida de privacidad.</p>
-
-                    <p>Orwell crea un mundo aterrador donde el pensamiento individual es un crimen y la historia se reescribe constantemente. La Neolengua busca limitar el pensamiento mismo reduciendo el vocabulario. El Ministerio de la Verdad trabaja paradójicamente en la falsificación.</p>
-
-                    <div class="pullquote">"La libertad es la libertad de decir que dos más dos son cuatro. Si se concede esto, todo lo demás vendrá por sus pasos contados."</div>
-
-                    <p>La relación de Winston con Julia representa un último acto de rebelión humana antes de ser destruidos por el sistema. El final devastador muestra el triunfo completo del totalitarismo sobre el espíritu humano. '2+2=5' se convierte en el símbolo perfecto de cómo el poder puede distorsionar la realidad misma.</p>
-
-                    <p>Lo más perturbador de 1984 es su relevancia continua. En una era de fake news, vigilancia digital y polarización política, las advertencias de Orwell resuenan más fuerte que nunca. No es solo una novela histórica sobre el totalitarismo del siglo XX, es un manual sobre cómo reconocer y resistir la manipulación en cualquier época.</p>`
-                },
-                {
-                    title: "Cien Años de Soledad",
-                    date: "20 de febrero, 2024",
-                    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=400&fit=crop",
-                    excerpt: "Gabriel García Márquez teje una saga familiar épica en Macondo. El realismo mágico alcanza su cúspide en esta novela donde llueve durante años y los muertos conviven con los vivos.",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Gabriel García Márquez teje una saga familiar épica en Macondo, un pueblo mítico de Colombia. La familia Buendía atraviesa generaciones marcadas por el destino, la soledad y eventos mágicos que se mezclan con la realidad.</p>
-
-                    <p>El realismo mágico alcanza su cúspide en esta novela donde llueve durante años, una mujer asciende al cielo y los muertos conviven con los vivos. Cada generación repite los errores de la anterior, atrapados en un ciclo de pasión, guerra y olvido.</p>
-
-                    <p>El coronel Aureliano Buendía y sus 32 guerras perdidas simbolizan la futilidad del conflicto. Remedios la Bella representa la pureza inalcanzable. El final apocalíptico conecta la profecía con la historia familiar, revelando que todo estaba escrito desde el principio.</p>
-
-                    <div class="pullquote">"Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo."</div>
-
-                    <p>García Márquez no solo cuenta una historia familiar, sino la historia de América Latina: sus revoluciones fallidas, su colonización, su búsqueda de identidad. Macondo es Colombia, pero también es cada pueblo latinoamericano atrapado entre la tradición y la modernidad, entre la magia y la realidad brutal.</p>`
-                }
-            ],
-            peliculas: [
-                {
-                    title: "Blade Runner 2049",
-                    date: "10 de marzo, 2024",
-                    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=400&fit=crop",
-                    excerpt: "Denis Villeneuve expande el universo de Blade Runner con una secuela visualmente impresionante que explora temas de identidad y humanidad.",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Denis Villeneuve expande el universo de Blade Runner con una secuela visualmente impresionante. K, un replicante blade runner, descubre un secreto que podría cambiar la relación entre humanos y replicantes.</p>
-
-                    <p>La película explora temas de identidad, humanidad y qué significa ser real. La cinematografía de Roger Deakins es simplemente magistral, cada fotograma es una pintura. Las ruinas de Las Vegas son particularmente memorables, con su atmósfera naranja post-apocalíptica.</p>
-
-                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=400&fit=crop" class="float-image">
-
-                    <p>Ryan Gosling ofrece una actuación contenida pero poderosa. Harrison Ford regresa como Deckard, conectando ambas películas de manera orgánica. La música de Hans Zimmer y Benjamin Wallfisch complementa perfectamente la atmósfera.</p>
-
-                    <p>Es una meditación sobre la memoria, el alma y nuestro lugar en un mundo tecnológico. K descubre que sus memorias, lo que creía que lo hacía único, son implantadas. Pero su reacción a esta revelación, su capacidad de sentir dolor y amor a pesar de ello, lo hace profundamente humano.</p>
-
-                    <div class="pullquote">"Morir por la causa correcta es lo más humano que podemos hacer."</div>
-
-                    <p>Villeneuve logra lo imposible: crear una secuela que honra el original mientras establece su propia identidad. No es solo ciencia ficción, es filosofía visual sobre qué nos hace humanos en un mundo donde la línea entre lo real y lo artificial se desvanece cada día más.</p>`
-                }
-            ],
-            comics: [
-                {
-                    title: "All-Star Superman",
-                    date: "14 de febrero, 2024",
-                    image: "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=600&h=400&fit=crop",
-                    excerpt: "Grant Morrison y Frank Quitely crean la historia definitiva de Superman. Es una celebración de todo lo que hace especial al personaje: su humanidad, optimismo y bondad.",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Grant Morrison y Frank Quitely crean la historia definitiva de Superman. Enfrentando su mortalidad tras una sobreexposición solar, Superman completa 12 trabajos imposibles. Es una celebración de todo lo que hace especial al personaje: su humanidad, optimismo y bondad inherente.</p>
-
-                    <p>Cada número es una joya autocontenida. La escena de la chica en la cornisa es perfecta: Superman no usa sus poderes, solo su empatía y palabras. El arte de Quitely captura la majestuosidad del personaje sin hacerlo inalcanzable.</p>
-
-                    <div class="pullquote">"Siempre estarás ahí para hacerlos mejores... De la única manera que importa, estarán ahí."</div>
-
-                    <p>Es emotiva, inspiradora y profunda. Muestra que Superman no es interesante por su poder, sino por su carácter. Lex Luthor finalmente entiende al héroe cuando brevemente gana sus poderes. El final con Lois es perfecto.</p>
-
-                    <p>Morrison entiende que Superman es sobre esperanza. En un mundo cínico, Superman elige ver lo mejor en todos. No es ingenuo, es activamente optimista. All-Star Superman nos recuerda por qué necesitamos héroes: no para salvarnos, sino para inspirarnos a ser mejores.</p>`
-                }
-            ],
-            series: [
-                {
-                    title: "Breaking Bad",
-                    date: "25 de marzo, 2024",
-                    image: "https://images.unsplash.com/photo-1574267432644-f74f333e584e?w=600&h=400&fit=crop",
-                    excerpt: "Vince Gilligan transforma a Walter White de maestro de química a señor de la droga. Es un estudio sobre orgullo, moralidad y consecuencias.",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1574267432644-f74f333e584e?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Vince Gilligan transforma a Walter White de maestro de química a señor de la droga en una de las mejores series jamás hechas. Bryan Cranston ofrece una actuación maestra, mostrando la transformación gradual de Walter en Heisenberg.</p>
-
-                    <p>La serie es un estudio sobre orgullo, moralidad y consecuencias. Walter comienza cocinando metanfetamina para pagar su tratamiento de cáncer, pero rápidamente se revela que es sobre su ego. Jesse Pinkman es el corazón moral, sufriendo por las acciones de Walter.</p>
-
-                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&h=400&fit=crop" class="float-image right">
-
-                    <p>La cinematografía usa simbolismo del color brillantemente. Los episodios 'Ozymandias' y 'Felina' son perfectos. Cada decisión tiene peso y consecuencias. Es shakespeariano en su tragedia.</p>
-
-                    <div class="pullquote">"Yo soy el peligro. Yo soy quien llama."</div>
-
-                    <p>El final es satisfactorio y devastador, cerrando perfectamente el arco de Walter. No hay redención fácil, solo el reconocimiento de lo que ha hecho y las consecuencias de sus elecciones. Breaking Bad demuestra que la televisión puede rivalizar con cualquier forma de arte en complejidad narrativa y profundidad emocional.</p>`
-                }
-            ],
-            ensayos: [
-                {
-                    title: "La Soledad del Héroe Moderno",
-                    date: "1 de marzo, 2024",
-                    image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800&h=400&fit=crop",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>Los superhéroes contemporáneos ya no representan ideales inalcanzables de perfección moral, sino que encarnan las contradicciones y conflictos internos de nuestra sociedad. Batman se debate entre la justicia y la venganza, Spider-Man con la responsabilidad y la vida personal, Superman con su identidad alienígena y su humanidad adoptiva.</p>
-
-                    <p>Esta evolución refleja nuestra comprensión más matizada de la heroicidad. Ya no buscamos dioses que nos salven, sino humanos extraordinarios que luchan con los mismos dilemas que nosotros. El héroe moderno está solo no por ser diferente, sino por ser demasiado humano en un mundo que exige perfección.</p>
-
-                    <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=600&h=400&fit=crop" class="float-image">
-
-                    <p>La Fortaleza de la Soledad de Superman es más que un refugio físico; es una metáfora de la necesidad de introspección en un mundo ruidoso. Todos necesitamos nuestro espacio de cristales y memorias donde podamos ser simplemente nosotros mismos, sin las expectativas del mundo sobre nuestros hombros.</p>
-
-                    <p>Los mejores cómics entienden esto. No se tratan solo de peleas épicas y salvamentos imposibles, sino de personas intentando hacer lo correcto en un universo que no siempre recompensa la bondad. Son espejos de nuestras propias luchas magnificadas a escala mitológica.</p>
-
-                    <div class="pullquote">"El verdadero heroísmo no está en el poder absoluto, sino en la elección constante de usarlo para el bien, incluso cuando sería más fácil no hacerlo."</div>
-
-                    <p>Cuando vemos a Superman dudar, a Batman quebrar, a Wonder Woman cuestionar sus creencias, no los vemos como débiles. Los vemos como reales. Y en esa realidad encontramos no solo entretenimiento, sino consuelo: incluso los más poderosos luchan con la incertidumbre.</p>
-
-                    <p>La soledad del héroe moderno es nuestra propia soledad amplificada. En un mundo hiperconectado pero emocionalmente aislado, estos personajes nos recuerdan que está bien sentirse solo, está bien dudar, está bien no tener todas las respuestas. Lo que importa es seguir intentando, seguir eligiendo hacer lo correcto incluso cuando nadie nos está mirando.</p>`
-                },
-                {
-                    title: "Narrativas que Persisten",
-                    date: "10 de enero, 2024",
-                    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=400&fit=crop",
-                    fullContent: `<img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=500&fit=crop" class="modal-article-image">
-                    
-                    <p>¿Por qué ciertas historias permanecen con nosotros años después de consumirlas? No es solo la trama o los personajes, sino cómo resuenan con verdades fundamentales de la experiencia humana.</p>
-
-                    <p>Las grandes narrativas funcionan en múltiples niveles. En la superficie, entretienen. Más profundo, exploran temas universales: amor, pérdida, identidad, propósito. Las mejores historias cambian dependiendo de cuándo las experimentamos en nuestras vidas.</p>
-
-                    <div class="columns-2">
-                        <p>El monomito de Campbell sugiere que todas las historias son variaciones del viaje del héroe. Pero lo que hace única a cada historia es su contexto cultural, su voz específica, sus detalles particulares. Don Quijote y Frodo comparten estructura, pero son completamente diferentes.</p>
-
-                        <p>La narrativa es fundamental para cómo entendemos el mundo y a nosotros mismos. No vivimos en hechos desconectados, sino en historias que les dan significado. Somos, en esencia, las historias que contamos sobre nosotros mismos.</p>
-                    </div>
-
-                    <p>Un buen libro nos puede acompañar toda la vida. Una película vista en el momento correcto puede cambiar nuestra perspectiva. Un cómic puede articular emociones que no sabíamos cómo expresar. Las historias nos salvan de la soledad fundamental de la existencia individual, conectándonos con experiencias compartidas a través del tiempo y el espacio.</p>
-
-                    <div class="pullquote">"Las historias son datos con alma. Son lo que nos hace humanos."</div>
-
-                    <p>Por eso archivamos, coleccionamos, preservamos. No solo las obras en sí, sino nuestras reacciones a ellas, cómo nos cambiaron, qué significaron en diferentes momentos de nuestras vidas. Este archivo personal es un mapa de mi propio viaje interior a través de las narrativas que me han formado.</p>`
-                }
-            ],
-            pensamientos: [
-                {
-                    title: "Sobre Coleccionar Historias",
-                    date: "30 de marzo, 2024",
-                    image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&h=300&fit=crop",
-                    fullContent: `<p>Hoy pensaba en por qué colecciono historias como otros coleccionan objetos físicos. Cada libro, película, cómic es un fragmento de la experiencia humana preservado. Son ventanas a otras vidas, otros mundos, otras formas de pensar.</p>
-
-                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=700&h=400&fit=crop" class="float-image">
-
-                    <p>No se trata de acumular por acumular. Cada historia que vale la pena se convierte en parte de quién somos. Los personajes que admiramos influyen en nuestras decisiones. Los mundos que exploramos expanden nuestra imaginación. Las ideas que encontramos desafían nuestras creencias.</p>
-
-                    <p>Mi Fortaleza personal no está hecha de cristales alienígenas, sino de páginas y fotogramas. Es igualmente preciosa. Aquí archivo las narrativas que me han formado, esperando poder compartirlas y que tal vez ayuden a formar a otros.</p>`
-                },
-                {
-                    title: "Relecturas y Revisitas",
-                    date: "5 de enero, 2024",
-                    image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&h=300&fit=crop",
-                    fullContent: `<p>Ayer volví a ver Blade Runner 2049 y fue una experiencia completamente diferente a la primera vez. Las primeras veces me enfoqué en la trama y los efectos visuales. Ahora veo las capas temáticas: qué significa ser humano, el peso de las memorias falsas, la soledad existencial de K.</p>
-
-                    <p>Las mejores obras recompensan las revisitas. Cada vez traemos diferentes experiencias de vida y vemos cosas nuevas. Un libro leído a los 15 es diferente al mismo libro a los 30. No ha cambiado el libro, hemos cambiado nosotros.</p>
-
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=700&h=400&fit=crop" class="float-image right">
-
-                    <p>Esta es la magia de construir una biblioteca personal, física o mental. No solo consumimos y descartamos. Volvemos, reexaminamos, redescubrimos. El arte que importa crece con nosotros.</p>`
-                }
-            ]
-        };
-
-        // ============================================
-        // FUNCIONES
-        // ============================================
-
-        function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.getElementById(pageId).classList.add('active');
-            window.scrollTo(0, 0);
-            
-            // Renderizar contenido de la página si es necesario
-            if (pageId !== 'inicio') {
-                renderContent(pageId);
-            }
-        }
-
-        function renderContent(section) {
-            const container = document.getElementById(`${section}-content`);
-            const items = contentData[section];
-
-            if (section === 'ensayos' || section === 'pensamientos') {
-                // Formato de artículos completos para ensayos y pensamientos
-                container.innerHTML = items.map((item, index) => `
-                    <div class="article">
-                        ${item.image ? `<img src="${item.image}" class="article-image" alt="${item.title}" onclick="openModal('${section}', ${index})">` : ''}
-                        <h3 class="article-title">${item.title}</h3>
-                        <div class="article-meta">${item.date}</div>
-                        <div class="article-excerpt">${item.fullContent.replace(/<[^>]*>/g, '').substring(0, 300)}...</div>
-                        <a class="read-more" onclick="openModal('${section}', ${index})">Leer completo →</a>
-                    </div>
-                    ${index < items.length - 1 ? '<div class="section-divider">◆</div>' : ''}
-                `).join('');
-            } else {
-                // Grid de artículos para libros, películas, cómics, series
-                container.innerHTML = items.map((item, index) => `
-                    <div class="article">
-                        <img src="${item.image}" class="article-image" alt="${item.title}" onclick="openModal('${section}', ${index})">
-                        <h3 class="article-title">${item.title}</h3>
-                        <div class="article-meta">${item.date}</div>
-                        <div class="article-excerpt">${item.excerpt}</div>
-                        <a class="read-more" onclick="openModal('${section}', ${index})">Leer análisis completo →</a>
-                    </div>
-                `).join('');
-            }
-        }
-
-        function openModal(section, index) {
-            const item = contentData[section][index];
-            const modal = document.getElementById('modal');
-            
-            const modalBody = document.getElementById('modal-body');
-            modalBody.innerHTML = `
-                <h2 class="modal-article-title">${item.title}</h2>
-                <div class="modal-article-meta">${item.date}</div>
-                <div class="modal-article-content">${item.fullContent}</div>
-            `;
-            
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('modal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        };
-
-        // Mostrar fecha actual en el header
-        function updateDate() {
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const today = new Date();
-            document.getElementById('current-date').textContent = today.toLocaleDateString('es-ES', options);
-        }
-
-        // Inicializar
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDate();
-        });
-    </script>
+    <script src="js/main,js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "libros": [
+    "libros/1984.txt",
+    "libros/cien-anos-soledad.txt"
+  ],
+  "peliculas": [
+    "peliculas/blade-runner-2049.txt"
+  ],
+  "comics": [
+    "comics/watchmen.txt"
+  ],
+  "proyectos": [
+    "proyectos/breaking-bad.txt"
+  ],
+  "ensayos": [
+    "ensayos/soledad-heroe-moderno.txt",
+    "ensayos/narrativas-que-persisten.txt"
+  ],
+  "pensamientos": [
+    "pensamientos/coleccionar-historias.txt",
+    "pensamientos/relecturas.txt"
+  ]
+}

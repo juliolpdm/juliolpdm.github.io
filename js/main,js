@@ -1,0 +1,199 @@
+// ============================================
+// VARIABLES GLOBALES
+// ============================================
+
+let contentData = {};
+
+// ============================================
+// FUNCIONES DE CARGA DE CONTENIDO
+// ============================================
+
+// Función para parsear el archivo de texto con metadata
+function parseTextFile(text) {
+    const metadataRegex = /---METADATA---([\s\S]*?)---CONTENT---([\s\S]*)/;
+    const match = text.match(metadataRegex);
+    
+    if (!match) {
+        console.error('Formato de archivo incorrecto');
+        return null;
+    }
+    
+    const metadataSection = match[1];
+    const contentSection = match[2];
+    
+    // Parsear metadata
+    const metadata = {};
+    const lines = metadataSection.trim().split('\n');
+    
+    lines.forEach(line => {
+        const colonIndex = line.indexOf(':');
+        if (colonIndex > -1) {
+            const key = line.substring(0, colonIndex).trim();
+            const value = line.substring(colonIndex + 1).trim();
+            
+            switch(key) {
+                case 'TITLE':
+                    metadata.title = value;
+                    break;
+                case 'DATE':
+                    metadata.date = value;
+                    break;
+                case 'IMAGE':
+                    metadata.image = value;
+                    break;
+                case 'EXCERPT':
+                    metadata.excerpt = value;
+                    break;
+            }
+        }
+    });
+    
+    metadata.fullContent = contentSection.trim();
+    
+    return metadata;
+}
+
+// Cargar todos los archivos de contenido
+async function loadContent() {
+    try {
+        // Cargar el archivo de configuración
+        const response = await fetch('content/config.json');
+        const config = await response.json();
+        
+        // Para cada sección, cargar los archivos
+        for (const section in config) {
+            contentData[section] = [];
+            
+            const files = config[section];
+            
+            for (const filePath of files) {
+                try {
+                    const contentResponse = await fetch(`content/${filePath}`);
+                    const text = await contentResponse.text();
+                    
+                    const parsedContent = parseTextFile(text);
+                    
+                    if (parsedContent) {
+                        contentData[section].push(parsedContent);
+                    } else {
+                        console.error(`Error parseando ${filePath}`);
+                    }
+                } catch (error) {
+                    console.error(`Error cargando ${filePath}:`, error);
+                }
+            }
+        }
+        
+        console.log('Contenido cargado exitosamente:', contentData);
+    } catch (error) {
+        console.error('Error al cargar la configuración:', error);
+        alert('Error al cargar el contenido. Asegúrate de estar usando un servidor web local o GitHub Pages.');
+    }
+}
+
+// ============================================
+// FUNCIONES DE NAVEGACIÓN
+// ============================================
+
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+    window.scrollTo(0, 0);
+    
+    // Renderizar contenido de la página si es necesario
+    if (pageId !== 'inicio') {
+        renderContent(pageId);
+    }
+}
+
+// ============================================
+// FUNCIONES DE RENDERIZADO
+// ============================================
+
+function renderContent(section) {
+    const container = document.getElementById(`${section}-content`);
+    
+    // Verificar que el contenido esté cargado
+    if (!contentData[section] || contentData[section].length === 0) {
+        container.innerHTML = '<p style="text-align: center; padding: 40px; color: #999;">Cargando contenido...</p>';
+        return;
+    }
+    
+    const items = contentData[section];
+
+    if (section === 'ensayos' || section === 'pensamientos') {
+        // Formato de artículos completos para ensayos y pensamientos
+        container.innerHTML = items.map((item, index) => `
+            <div class="article">
+                ${item.image ? `<img src="${item.image}" class="article-image" alt="${item.title}" onclick="openModal('${section}', ${index})">` : ''}
+                <h3 class="article-title">${item.title}</h3>
+                <div class="article-meta">${item.date}</div>
+                <div class="article-excerpt">${item.excerpt || item.fullContent.replace(/<[^>]*>/g, '').substring(0, 300) + '...'}</div>
+                <a class="read-more" onclick="openModal('${section}', ${index})">Leer completo →</a>
+            </div>
+            ${index < items.length - 1 ? '<div class="section-divider">◆</div>' : ''}
+        `).join('');
+    } else {
+        // Grid de artículos para libros, películas, cómics, proyectos
+        container.innerHTML = items.map((item, index) => `
+            <div class="article">
+                ${item.image ? `<img src="${item.image}" class="article-image" alt="${item.title}" onclick="openModal('${section}', ${index})">` : ''}
+                <h3 class="article-title">${item.title}</h3>
+                <div class="article-meta">${item.date}</div>
+                <div class="article-excerpt">${item.excerpt || 'Click para leer más...'}</div>
+                <a class="read-more" onclick="openModal('${section}', ${index})">Leer análisis completo →</a>
+            </div>
+        `).join('');
+    }
+}
+
+// ============================================
+// FUNCIONES DE MODAL
+// ============================================
+
+function openModal(section, index) {
+    const item = contentData[section][index];
+    const modal = document.getElementById('modal');
+    
+    const modalBody = document.getElementById('modal-body');
+    modalBody.innerHTML = `
+        <h2 class="modal-article-title">${item.title}</h2>
+        <div class="modal-article-meta">${item.date}</div>
+        <div class="modal-article-content">${item.fullContent}</div>
+    `;
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('modal').classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        closeModal();
+    }
+};
+
+// ============================================
+// UTILIDADES
+// ============================================
+
+// Mostrar fecha actual en el header
+function updateDate() {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today = new Date();
+    document.getElementById('current-date').textContent = today.toLocaleDateString('es-ES', options);
+}
+
+// ============================================
+// INICIALIZACIÓN
+// ============================================
+
+document.addEventListener('DOMContentLoaded', async function() {
+    updateDate();
+    await loadContent(); // Esperar a que se cargue el contenido
+});
