@@ -93,6 +93,7 @@
             border-bottom: 3px solid #000;
             text-transform: uppercase;
             letter-spacing: 1px;
+            justify-content: center;
         }
 
         .section-subheading {
@@ -213,7 +214,7 @@
             font-style: italic;
             padding: 20px;
             margin: 20px 0;
-            border-left: 4px solid #c00;
+            border-left: 4px solid rgb(3, 107, 163);
             background: #f9f9f9;
             color: #333;
         }
@@ -223,7 +224,7 @@
             text-align: center;
             margin: 40px 0;
             font-size: 1.5em;
-            color: #c00;
+            color: rgb(15, 8, 8);
         }
 
         /* Modal para leer completo */

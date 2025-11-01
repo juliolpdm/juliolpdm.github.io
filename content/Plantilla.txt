@@ -1,0 +1,38 @@
+---METADATA---
+TITLE: titulo
+DATE: Fecha
+IMAGE: portada
+EXCERPT:Descripcion
+---CONTENT---
+
+<img src="Imagen de articulo" class="modal-article-image">
+<img src="Imagen flotante" class="float-image">
+gifs tambien y pueden cambiar de tamaño
+<img src="src/gifs/minecraft-villager.gif" width="30px" height="30px"> 
+<p>parafo <br> salto de linea </p> 
+<div class="pullquote">"cita"</div>
+
+<p>: Define un párrafo de texto. Es la etiqueta fundamental para bloques de texto principales.
+<h1> a <h6>: Definen encabezados de sección. <h1> es el más importante (título principal), y <h6> el menos importante (subtítulo de menor nivel).
+<br>: Inserta un salto de línea simple. No requiere etiqueta de cierre.
+<div>: Define una división o sección en el documento, a menudo utilizada como contenedor para aplicar estilos con CSS.
+<a>: Crea un hipervínculo a otra página o recurso. El texto dentro de la etiqueta se convierte en el enlace. 
+
+Formato y Estilo
+
+    <b>: Aplica formato de negrita al texto, sin implicar importancia adicional.
+    <strong>: Define texto con fuerte importancia. Visualmente es similar a <b> (negrita), pero con un significado semántico más fuerte para navegadores y tecnologías de asistencia.
+    <i>: Aplica formato de cursiva al texto, para una voz o estado de ánimo alternativo.
+    <em>: Enfatiza el texto (usualmente en cursiva), con un significado semántico de énfasis.
+    <u>: Subraya el texto.
+    <mark>: Resalta el texto con un color de fondo, como si se usara un marcador.
+    <small>: Hace que el texto sea más pequeño.
+    <del>: Marca el texto como "eliminado" (lo tacha).
+    <sub>: Crea texto subíndice (ej: H₂O).
+    <sup>: Crea texto superíndice (ej: E=mc²). 
+
+Listas
+
+    <ul>: Define una lista desordenada (con viñetas).
+    <ol>: Define una lista ordenada (con números o letras).
+    <li>: Define un elemento de lista individual, usado dentro de <ul> u <ol>. 
