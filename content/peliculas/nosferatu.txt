@@ -2,7 +2,7 @@
 TITLE: Nosferatu
 DATE: 1st of the month (noviembre, 2025)
 IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg
-EXCERPT:Nosferatu de Robert Eggers es una obra maestra del cine del terror gotico 
+EXCERPT: Nosferatu de Robert Eggers es una obra maestra del cine del terror gotico 
 ---CONTENT---
 
 <img src="https://m.media-amazon.com/images/I/715BLU5YPZL.jpg" class="modal-article-image">
