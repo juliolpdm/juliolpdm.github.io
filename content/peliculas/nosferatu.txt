@@ -1,40 +1,80 @@
 ---METADATA---
 TITLE: Nosferatu
-DATE: 1st of the month (noviembre, 2025)
-IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg
-EXCERPT: Nosferatu de Robert Eggers es una obra maestra del cine del terror gotico 
+DATE: 3 de enero de 2026
+IMAGE: 
+EXCERPT: 
 ---CONTENT---
+
+<p>---METADATA---</p>
+
+<p>TITLE: Nosferatu</p>
+
+<p>DATE: 1st of the month (noviembre, 2025)</p>
+
+<p>IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg</p>
+
+<p>EXCERPT: Nosferatu de Robert Eggers es una obra maestra del cine del terror gotico</p>
+
+<p>---CONTENT---</p>
 
 <img src="https://m.media-amazon.com/images/I/715BLU5YPZL.jpg" class="modal-article-image">
 
-<p>Robert Eggers es un director bastante aclamado, con bastante razon, aunque no he explorado su filmografia, 
-    es facil denotar que es un director con un enfoque bastante artistico que a la hora de adaptar obras ajenas 
-sabe captar muy bien el nucleo de ellas y sacar su potencial, tanto Nosferatu como su adaptacion de hamlet en "Northman"
-exploran a la perfeccion el tono y mensaje de las obras originales, pero dandole mas sazon, en este caso, el conflicto de Ellen 
-es mucho mas importante y profundo a lo largo de la historia, Thomas no se queda atras puesto que la psique del personaje, aunque funciona
-mas para desenvolver el conflicto de Ellen en un mundo tan opresor como en el que esta obligada a vivir, llega ser victima de su propio esposo,
-la actuacion de Nicholas Hoult es magnifica, Thomas es bastante superado por la situacion y es inclusive hasta patetico, pero funciona muy bien 
-para el mensaje de la pelicula </p>
+<p>Robert Eggers es un director bastante aclamado, con bastante razon, aunque no he explorado su filmografia,
+
+<p>es facil denotar que es un director con un enfoque bastante artistico que a la hora de adaptar obras ajenas</p>
+
+<p>sabe captar muy bien el nucleo de ellas y sacar su potencial, tanto Nosferatu como su adaptacion de hamlet en "Northman"</p>
+
+<p>exploran a la perfeccion el tono y mensaje de las obras originales, pero dandole mas sazon, en este caso, el conflicto de Ellen</p>
+
+<p>es mucho mas importante y profundo a lo largo de la historia, Thomas no se queda atras puesto que la psique del personaje, aunque funciona</p>
+
+<p>mas para desenvolver el conflicto de Ellen en un mundo tan opresor como en el que esta obligada a vivir, llega ser victima de su propio esposo,</p>
+
+<p>la actuacion de Nicholas Hoult es magnifica, Thomas es bastante superado por la situacion y es inclusive hasta patetico, pero funciona muy bien</p>
+
+<p>para el mensaje de la pelicula </p></p>
+
 <img src="https://www.penumbria.mx/wp-content/uploads/2025/01/Robert-Eggers.jpeg" class="float-image">
-<div class="pullquote"> 
-    <p>"You are not for the living. You are not for human kind."</p>
+
+<div class="pullquote">
+
+<p>"You are not for the living. You are not for human kind."</p>
+
 </div>
 
 <p> <br> Me es dificil redactar un analisis bien hecho en este momento, mas que nada por que es una pelicula, dificil de analizar,
-por lo demasiado que es para analizar, Ellen como personaje es demasiado complejo como para describir lo que tiene que pasar por la pelicula,
-la manera en la que es practicamente una victima de todos, de su contexto, de su epoca, esa frase de nosferatu es tan, peak, por que es verdad, 
-incluso tras de su sacrificio, la persona que parece ser mas empatica a su situacion, sigue utilizandola, sigue tergiversando su sacrificio, es 
-una tragedia, si hay una escena que destaco, es, tras el funeral de su amiga de la infancia, tras declarar, que ya no tiene mas lagrimas para derramar
-en un plano que la encierra, suelta una ultima lagrima al darse cuenta que esta completamente sola en esto, es mas que eso, pero repito, es una pelicula tan poderosa
-que es dificil explicarlo con palabras, es una pelicula muy pasional, es una pelicula inefable, Ellen debe ser facilmente uno de los mejores personajes femeninos 
-del ultimo siglo, victima de su contexto, victima de abuso, la reaccion de su padre fue "Pecado", la reaccion de los medicos fue hostil, y su esposo repitio el trauma
-al verse superado por la situacion, nosferatu, es una tragedia.
+
+<p>por lo demasiado que es para analizar, Ellen como personaje es demasiado complejo como para describir lo que tiene que pasar por la pelicula,</p>
+
+<p>la manera en la que es practicamente una victima de todos, de su contexto, de su epoca, esa frase de nosferatu es tan, peak, por que es verdad,</p>
+
+<p>incluso tras de su sacrificio, la persona que parece ser mas empatica a su situacion, sigue utilizandola, sigue tergiversando su sacrificio, es</p>
+
+<p>una tragedia, si hay una escena que destaco, es, tras el funeral de su amiga de la infancia, tras declarar, que ya no tiene mas lagrimas para derramar</p>
+
+<p>en un plano que la encierra, suelta una ultima lagrima al darse cuenta que esta completamente sola en esto, es mas que eso, pero repito, es una pelicula tan poderosa</p>
+
+<p>que es dificil explicarlo con palabras, es una pelicula muy pasional, es una pelicula inefable, Ellen debe ser facilmente uno de los mejores personajes femeninos</p>
+
+<p>del ultimo siglo, victima de su contexto, victima de abuso, la reaccion de su padre fue "Pecado", la reaccion de los medicos fue hostil, y su esposo repitio el trauma</p>
+
+<p>al verse superado por la situacion, nosferatu, es una tragedia.</p>
+
 </p>
+
 <img src="https://images.squarespace-cdn.com/content/v1/59c9b7ead2b857a85063e490/6483b874-295e-4663-95b4-539aeed4a6db/The+Northman+-+Amleth.jpeg" class="float-image">
+
 <p><br> Parte de lo que hace a nosferatu tan, perfecta, es la ambientacion de la pelicula, la epoca victoriana forma parte de los victimarios de Ellen al ser victima tambien
-de su contexto, la sociedad de la epoca, donde la depresion se le consideraba "Melancolia" y no era tratada como era debido, junto a la toma de escena me parece una de las mejores
-cualidades de Eggers como director, ya que son puntos fuertes de ambas reinterpretaciones que he mencionado anteriormente, en Northman, Eggers realiza un trabajo magnifico al desarrollar 
-la cultura vikinga y la epoca, ademas de recontextualizar la historia de hamlet de manera perfecta, puedes ver la historia como una exploracion de la mitologia nordica o a su vez, de la locura
-de un hombre en busca de venganza, utilizando la cultura con una precision historica impresionante para recontextualizar una historia muy plantada en el imaginario colectivo, ambas peliculas, son
-obras artisticas perfectas, mi mayor copium es que Eggers dirija una pelicula de DC y recontextualice un personaje como solo Moore ha sido capaz
+
+<p>de su contexto, la sociedad de la epoca, donde la depresion se le consideraba "Melancolia" y no era tratada como era debido, junto a la toma de escena me parece una de las mejores</p>
+
+<p>cualidades de Eggers como director, ya que son puntos fuertes de ambas reinterpretaciones que he mencionado anteriormente, en Northman, Eggers realiza un trabajo magnifico al desarrollar</p>
+
+<p>la cultura vikinga y la epoca, ademas de recontextualizar la historia de hamlet de manera perfecta, puedes ver la historia como una exploracion de la mitologia nordica o a su vez, de la locura</p>
+
+<p>de un hombre en busca de venganza, utilizando la cultura con una precision historica impresionante para recontextualizar una historia muy plantada en el imaginario colectivo, ambas peliculas, son</p>
+
+<p>obras artisticas perfectas, mi mayor copium es que Eggers dirija una pelicula de DC y recontextualice un personaje como solo Moore ha sido capaz</p>
+
 </p>

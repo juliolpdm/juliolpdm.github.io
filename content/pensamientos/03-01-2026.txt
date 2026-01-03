@@ -1,0 +1,17 @@
+---METADATA---
+TITLE: 03-01-2026
+DATE: 03 / 01 / 2026T16:05
+IMAGE: 
+EXCERPT: 
+---CONTENT---
+
+<h1>Pensamiento Diario</h1>
+<h3><em>sábado, enero 3º, 2026</em></h3>
+
+<h2>Diario</h2>
+...
+
+<h2>Tareas</h2>
+- [ ] Tarea 1
+- [ ] Tarea 2
+- [ ] Tarea 3
