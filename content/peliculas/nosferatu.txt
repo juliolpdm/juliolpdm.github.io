@@ -1,7 +1,7 @@
 ---METADATA---
 TITLE: Nosferatu
 DATE: 3 de enero de 2026
-IMAGE: 
+IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg
 EXCERPT: 
 ---CONTENT---
 
