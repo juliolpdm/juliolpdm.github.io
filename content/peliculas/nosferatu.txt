@@ -2,20 +2,8 @@
 TITLE: Nosferatu
 DATE: 3 de enero de 2026
 IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg
-EXCERPT: 
+EXCERPT: Critica poca profunda de nosferatu lol
 ---CONTENT---
-
-<p>---METADATA---</p>
-
-<p>TITLE: Nosferatu</p>
-
-<p>DATE: 1st of the month (noviembre, 2025)</p>
-
-<p>IMAGE: https://m.media-amazon.com/images/I/715BLU5YPZL.jpg</p>
-
-<p>EXCERPT: Nosferatu de Robert Eggers es una obra maestra del cine del terror gotico</p>
-
-<p>---CONTENT---</p>
 
 <img src="https://m.media-amazon.com/images/I/715BLU5YPZL.jpg" class="modal-article-image">
 
