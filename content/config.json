@@ -6,10 +6,17 @@
   "comics": [
     "comics/asa.txt"
   ],
-  "proyectos": [],
-  "ensayos": [],
+  "proyectos": [
+    "proyectos/monkey.txt",
+    "proyectos/VIKTOR STEAMPUNK MONKEY.txt"
+  ],
+  "ensayos": [
+    "ensayos/Frustacion masculina.txt"
+  ],
   "pensamientos": [
-    "pensamientos/03-01-2026.txt"
+    "pensamientos/03-01-2026.txt",
+    "pensamientos/06-01-2026.txt",
+    "pensamientos/08-01-2026.txt"
   ],
   "series": []
 }
